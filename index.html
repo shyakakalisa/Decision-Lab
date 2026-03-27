@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Decision Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Decision Lab</h1>
+      <p class="subtitle">
+        Explore how small choices can shape confidence, growth, and opportunity.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro card">
+      <h2>Choose a Scenario</h2>
+      <p>
+        Pick a situation below and see how your decisions change the outcome.
+      </p>
+      <div class="scenario-grid" id="scenarioGrid"></div>
+    </section>
+
+    <section class="game-area hidden" id="gameArea">
+      <div class="card">
+        <h2 id="scenarioTitle">Scenario Title</h2>
+        <p id="scenarioText">Scenario description goes here.</p>
+
+        <div class="stats">
+          <div class="stat-box">
+            <span class="stat-label">Confidence</span>
+            <span class="stat-value" id="confidenceValue">0</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Growth</span>
+            <span class="stat-value" id="growthValue">0</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Risk</span>
+            <span class="stat-value" id="riskValue">0</span>
+          </div>
+        </div>
+
+        <div class="choices" id="choicesContainer"></div>
+
+        <div class="result-box hidden" id="resultBox">
+          <h3>Outcome</h3>
+          <p id="resultText"></p>
+        </div>
+
+        <div class="button-row">
+          <button id="nextButton" class="primary-btn hidden">Next Step</button>
+          <button id="restartButton" class="secondary-btn hidden">Restart Scenario</button>
+          <button id="backButton" class="secondary-btn">Back to Scenarios</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by Shyaka Kalisa • Decision Lab</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
